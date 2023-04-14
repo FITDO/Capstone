@@ -1,0 +1,51 @@
+h1
+{
+    font-size: 48px;
+}
+
+button
+{
+    
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 8px;
+
+    padding: 5px 10px;
+    margin-top: 3px;
+}
+
+button:hover
+{
+    transition-duration: 0.75s;
+
+    background-color: rgb(157, 34, 53);
+    color: rgb(223 , 209 , 167);
+}
+
+#controlPanel
+{
+    background-color: rgb(223 , 209 , 167);
+    float: left;
+    width: 250px;
+    clear: left;
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 1%;
+    min-height: 725px;   
+}
+
+#sceneContanier
+{
+    float: left;
+    width: 81;
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 1%;
+    min-height: 617px;
+}
+
+#outputHolder
+{
+    min-height: 50px;
+}

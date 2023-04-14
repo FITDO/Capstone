@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Binary Search Tree Vizualizer</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/DataStructureStyle.css">
+        <link rel="shortcut icon" href="../Images/DataStructureIcon.ico">
+
+        <!--Way to easily import js files into the main file-->
+        <script type="importmap">
+			{
+				"imports": {
+					"three": "../three.js/build/three.module.js",
+					"three/addons/": "../three.js/examples/jsm/"
+				}
+			}
+		</script>
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Binary Search Tree</h2>
+            <button><a href="../HomePage.html">Home Page</a></button>
+        </header>
+        <div id="controlPanel">
+            <ul>
+
+                <li>
+                    <h3>Insert and Delete</h3>
+                    <label>Value:</label>
+                    <input type="number" id="InsertValue"> <br>
+                    <button id="InsertButton">Insert</button> <br>
+                    <label>Value:</label>
+                    <input type="number" id="DeleteValue">
+                    <button id="DeleteButton">Delete</button>
+                </li>
+
+                <li>
+                    <h3>Colors</h3>
+                    <label>Node Color:</label> <br>
+                    <input type="color" id="nodeColorPicker" value="#0000ff"> <br>
+                    <label>Line Color:</label> <br>
+                    <input type="color" id="lineColorPicker" value="#ff0000"> <br>
+                </li>
+                
+            </ul>
+
+            <div id="outputHolder">
+                <h2>Console</h2>
+                <p id="output">Failed to start</p>
+            </div>
+        </div>
+        <div id="sceneContanier">
+            
+        </div>
+        <!--The main script loaded at the end of the html page-->
+        <script src="../JavaScript/HTMLBinarySearchTree.js" type="module"></script>
+    </body>
+</html>

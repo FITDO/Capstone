@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Linked List Vizualizer</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/MainStyle.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/DataStructureStyle.css">
+        <link rel="shortcut icon" href="../Images/DataStructureIcon.ico">
+
+        <!--Way to easily import js files into the main file-->
+        <script type="importmap">
+			{
+				"imports": {
+					"three": "../three.js/build/three.module.js",
+					"three/addons/": "../three.js/examples/jsm/"
+				}
+			}
+		</script>
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Linked List</h2>
+            <button><a href="../HomePage.html">Home Page</a></button>
+        </header>
+        <div id="controlPanel">
+            <ul>
+                <li>
+                    <h3>Push and Pop</h3>
+                    <label>Value:</label>
+                    <input type="number" id="pushValue"><br>
+                    <button id="pushButton">Push</button>
+                    <button id="popButton">Pop</button>
+                </li>
+                <li>
+                    <h3>Insertion and Deletion</h3>
+                    <label>Index:</label>
+                    <input type="number" id="insIndex"><br>
+                    <label>Value:</label>
+                    <input type="number" id="indexValue"><br>
+                    <button id="insertButton">Insert</button><br>
+                    <br>
+                    <label>Index:</label>
+                    <input type="number" id="delIndex"><br>
+                    <button id="deletionButton">Deletion</button>
+                </li>
+                <li>
+                    <h3>Iteration</h3>
+                    <button id="iterationButton">Iterate through Linked List</button>
+                </li>
+                <li>
+                    <h3>Colors</h3>
+                    <label>Node Color:</label> <br>
+                    <input type="color" id="nodeColorPicker" value="#0000ff"> <br>
+                    <label>Line Color:</label> <br>
+                    <input type="color" id="lineColorPicker" value="#ff0000"> <br>
+                </li>
+            </ul>
+
+            <div id="outputHolder">
+                <h2>Console</h2>
+                <p id="output">Failed to Start</p>
+            </div>
+
+        </div>
+
+        <div id="sceneContanier">
+            
+        </div>
+        
+        <!--The main script loaded at the end of the html page-->
+        <script src="../JavaScript/HTMLLinkedList.js" type="module"></script>
+    </body>
+</html>
