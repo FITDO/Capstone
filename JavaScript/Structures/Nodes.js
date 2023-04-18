@@ -552,8 +552,8 @@ export class AVLTreeNode extends TreeNode
      * PURPOSE: Returns the balance factor of a node
      * 
      * if 0 then the node is balanced
-     * if less than 0 the node is right heavy
-     * if greater than 0 the node is left heavy
+     * if less than -1 the node is right heavy
+     * if greater than 1 the node is left heavy
      */
     CheckBalance ()
     {

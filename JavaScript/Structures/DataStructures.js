@@ -382,7 +382,7 @@ export class Queue extends BasicDS
  * CLASS: BasicDS
  * PURPOSE: Provides helper methods for its children to inherit
  */
-class Tree extends BasicDS
+class TreeDs extends BasicDS
 {
     constructor (startingPosition , nodeDistance , lineMaterial)
     {
@@ -702,7 +702,7 @@ class Tree extends BasicDS
  * CLASS: BinarySearchTree
  * PURPOSE: A three.js implementation of a BinarySearchTree that controls inserting and deleting nodes.
  */
-export class BinarySearchTree extends Tree
+export class BinarySearchTree extends TreeDs
 {
 
     constructor (startingPosition , nodeDistance , lineMaterial)
@@ -751,7 +751,7 @@ export class BinarySearchTree extends Tree
  * CLASS: AVL
  * PURPOSE: A implementation of an AVL Tree in Three.js. Controls deleting and inserting Nodes
  */
-export class AVL extends Tree
+export class AVL extends TreeDs
 {
     constructor (startingPosition , nodeDistance , lineMaterial)
     {
